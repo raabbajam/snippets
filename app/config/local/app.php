@@ -14,5 +14,7 @@ return array(
 	*/
 
 	'debug' => true,
+	'timezone' => 'Asia/Jakarta',
+	'url' => 'http://snippets.dev',
 
 );

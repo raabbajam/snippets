@@ -11,13 +11,17 @@
     "bower_components",
     "test",
     "tests"
-  ],,
+  ],
   "dependencies": {
     "bootstrap": "~3.1.1",
     "jquery": "~2.1.1",
     "html5shiv": "~3.7.2",
     "respond": "~1.4.2",
     "font-awesome": "~4.1.0",
-    "jquery-cookie": "~1.4.1"
+    "jquery-cookie": "~1.4.1",
+    "tabIndent.js": "git@github.com:julianlam/tabIndent.js.git",
+    "codemirror": "~4.5.0",
+    "PagePreloadingEffect": "git://github.com/codrops/PagePreloadingEffect.git",
+    "jquery-timeago": "git://github.com/rmm5t/jquery-timeago.git#~1.4.1"
   }
 }
