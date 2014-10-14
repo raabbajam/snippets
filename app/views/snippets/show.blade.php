@@ -1,0 +1,1 @@
+/opt/lampp/htdocs/laravel/snippets/app/views/snippets/show.blade.php

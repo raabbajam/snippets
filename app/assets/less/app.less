@@ -1,0 +1,310 @@
+// APP MANIFEST
+
+// Twitter Bootstrap Variables and Mixins
+@import "variables.less";
+@import "mixins.less";
+
+// Our APP Variables, Overrides and Mixins
+@import "app-variables.less";
+@import "app-mixins.less";
+
+// Our APP styles
+@import "app-styles.less";
+
+body {
+    overflow: hidden;
+}
+.CodeMirror
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    min-height: 500px;
+}
+
+.CodeMirror pre
+{
+}
+.gn-menu-wrapper
+{
+    left: auto;
+    right:-120px;
+}
+
+.header
+{
+    z-index: 10;
+    position: relative;
+}
+
+#gn-menu {
+    right: 0;
+    left: auto;
+    width: 60px;
+}
+.gn-icon.fa-icon::before {
+    font-family: FontAwesome;
+}
+
+.gn-menu-wrapper.gn-open-all {
+    width: 60px;
+}
+.gn-menu-wrapper.gn-open-all form>li, .gn-menu-wrapper.gn-open-part form>li {
+    width: 340px;
+    -webkit-transform: translateX(-120px);
+            transform: translateX(-120px);
+}
+.gn-menu {
+    overflow: visible;
+}
+.gn-scroller {
+    overflow: visible;
+}
+.gn-menu-wrapper {
+    overflow: visible;
+}
+.gn-menu-wrapper.gn-open-part form>li {
+    -webkit-transform: translateX(-120px);
+            transform: translateX(-120px);
+}
+.gn-menu-wrapper.gn-open-all form>li:hover {
+    -webkit-transform: translateX(-400px);
+            transform: translateX(-400px);
+}
+.gn-menu-wrapper form>li {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    background: white;
+    -webkit-transition: -webkit-transform 0.2s;
+            transition: transform 0.2s;
+    white-space: nowrap;
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+}
+
+.gn-menu-wrapper form>li:nth-child(1) {
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+}
+.gn-menu-wrapper form>li:nth-child(2) {
+    -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+}
+.gn-menu-wrapper form>li:nth-child(3) {
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+}
+.gn-menu-wrapper form>li:nth-child(4) {
+    -webkit-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+}
+.gn-menu-wrapper form>li:nth-child(5) {
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+}
+.gn-menu-wrapper a {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nl-form{
+    font-size: 1em;
+    margin: 0;
+    line-height: 60px;
+}
+.nl-form > li:hover{
+    position: relative;
+    z-index: 1;
+}
+.nl-field li{
+    height: 30px;
+    line-height: 30px;
+}
+/**
+ * preloading
+ */
+
+// .ip-header {
+//     background: #a55;
+// }
+.ip-loader {
+    bottom: 50%;
+}
+.loaded .ip-header {
+    background: transparent;
+}
+.loading .ip-logo,
+.loading .ip-loader {
+    opacity: 1;
+    -webkit-animation: myAnimInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
+            animation: myAnimInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
+}
+.loading .ip-loader {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+}
+@-webkit-keyframes myAnimInitialHeader {
+    from { 
+        opacity: 0; 
+        -webkit-transform: translate3d(0,800px,0); 
+                transform: translate3d(0,800px,0); 
+    }
+}
+@keyframes myAnimInitialHeader {
+    from { 
+        opacity: 0; 
+        -webkit-transform: translate3d(0,800px,0); 
+                transform: translate3d(0,800px,0); 
+    }
+}
+
+.loaded .ip-logo,
+.loaded .ip-loader {
+    opacity: 0.3;
+}
+ 
+.loaded .ip-logo {
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+    -webkit-animation: myAnimLoadedLogo 1s cubic-bezier(0.7,0,0.3,1) forwards;
+            animation: myAnimLoadedLogo 1s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+ 
+@-webkit-keyframes myAnimLoadedLogo {
+    to { 
+        -webkit-transform: translate3d(0,125%,0) scale3d(0.65,0.65,1); 
+                transform: translate3d(0,125%,0) scale3d(0.65,0.65,1)
+    }
+}
+ 
+@keyframes myAnimLoadedLogo {
+    to { 
+                -webkit-transform: translate3d(0,125%,0) scale3d(0.65,0.65,1); 
+                        transform: translate3d(0,125%,0) scale3d(0.65,0.65,1)
+    }
+}
+ 
+.loaded .ip-logo svg path {
+    -webkit-transition: all 0.5s ease 0.3s;
+            transition: all 0.5s ease 0.3s;
+    fill: #000;
+}
+ 
+.loaded .ip-loader {
+    -webkit-animation: myAnimLoadedLoader 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
+            animation: myAnimLoadedLoader 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+ 
+@-webkit-keyframes myAnimLoadedLoader {
+    to { 
+        opacity: 0; 
+        -webkit-transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); 
+                transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); 
+    }
+}
+ 
+@keyframes myAnimLoadedLoader {
+    to { 
+        opacity: 0; 
+        -webkit-transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); 
+                transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); 
+    }
+}
+.loaded .ip-header {
+    -webkit-animation: myAnimLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+            animation: myAnimLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+ 
+@-webkit-keyframes myAnimLoadedHeader {
+    to { -webkit-transform: translate3d(0,-100%,0); transform: translate3d(0,-100%,0); }
+}
+ 
+@keyframes myAnimLoadedHeader {
+    to { -webkit-transform: translate3d(0,-100%,0); transform: translate3d(0,-100%,0); }
+}
+.loaded .ip-logo svg  path.brackets {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+}
+
+.saving .ip-logo svg  path.left.brackets,
+.loading .ip-logo svg  path.left.brackets {
+    -webkit-animation: myAnimLoadedBracketLeft 2.3s cubic-bezier(0.7,0,0.3,1) forwards .2s infinite;
+            animation: myAnimLoadedBracketLeft 2.3s cubic-bezier(0.7,0,0.3,1) forwards .2s infinite;
+}
+.loading .ip-logo svg  path.right.brackets,
+.saving .ip-logo svg  path.right.brackets{
+    -webkit-animation: myAnimLoadedBracketRight 2.3s cubic-bezier(0.7,0,0.3,1) forwards .2s infinite;
+            animation: myAnimLoadedBracketRight 2.3s cubic-bezier(0.7,0,0.3,1) forwards .2s infinite;
+}
+@-webkit-keyframes myAnimLoadedBracketLeft {
+    from { -webkit-transform: translate(100px,0); transform: translate(100px,0); fill:#fff}
+    to { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0);}
+}
+@keyframes myAnimLoadedBracketLeft {
+    from { -webkit-transform: translate(100px,0); transform: translate(100px,0); fill:#fff}
+    to { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0);}
+}
+@-webkit-keyframes myAnimLoadedBracketRight {
+    from { -webkit-transform: translate(-100px,0); transform: translate(-100px,0); fill:#fff}
+    to { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+}
+@keyframes myAnimLoadedBracketRight {
+    from { -webkit-transform: translate(-100px,0); transform: translate(-100px,0); fill:#fff}
+    to { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+}
+.nl-field ul {
+    max-height: 300px;
+    overflow-y: auto;
+    min-width: 130px;
+    top: 80px;
+    width: 355px;
+    left: -137px;
+    padding-right: 30px;
+}
+.nl-field ul li {
+    color: #000;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
+}
+.nl-form>li:hover .nl-field.nl-field-open ul {
+    -webkit-transform: translateY(-20px) scale(1);
+            transform: translateY(-20px) scale(1);
+            -webkit-transform: translateY(-20px) scale(1);
+                    transform: translateY(-20px) scale(1)
+}
+
+.nl-field.nl-field-open ul,
+.nl-field ul {
+            -webkit-transform: translateY(-30%) scale(0.4);
+                    transform: translateY(-30%) scale(0.4);
+}
+.gn-menu li li, .gn-menu li:not(:first-child) {
+    box-shadow: inset 0 1px #C6D0DA;
+}
+.nl-form > li > a {
+    font-weight: 500;
+}
+.nl-dd ul li.nl-dd-checked:before {
+    line-height: 60px;
+    font-size: 100%;
+}
+.gn-menu li li { 
+    box-shadow: none;
+}
+.ip-header .ip-logo svg{ 
+    width: 100%;
+}
+.info {
+    background: rgba(0,0,0,.25);
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    margin: 0 20px;
+}
