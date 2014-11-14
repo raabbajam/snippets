@@ -19,9 +19,9 @@
     "respond": "~1.4.2",
     "font-awesome": "~4.1.0",
     "jquery-cookie": "~1.4.1",
-    "tabIndent.js": "git@github.com:julianlam/tabIndent.js.git",
+    "tabIndent.js": "https://github.com:julianlam/tabIndent.js",
     "codemirror": "~4.5.0",
-    "PagePreloadingEffect": "git://github.com/codrops/PagePreloadingEffect.git",
-    "jquery-timeago": "git://github.com/rmm5t/jquery-timeago.git#~1.4.1"
+    "PagePreloadingEffect": "https://github.com/codrops/PagePreloadingEffect",
+    "jquery-timeago": "https://github.com/rmm5t/jquery-timeago.git#~1.4.1"
   }
 }
