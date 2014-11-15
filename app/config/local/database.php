@@ -31,12 +31,12 @@ return array(
       'prefix'    => '',
     ),
 
-    'pgsql' => array(
+    'pgsql' => array(`
       'driver'   => 'pgsql',
       'host'     => 'localhost',
-      'database' => 'homestead',
-      'username' => 'homestead',
-      'password' => 'secret',
+      'database' => 'snippets',
+      'username' => 'raabbajam',
+      'password' => '',
       'charset'  => 'utf8',
       'prefix'   => '',
       'schema'   => 'public',
