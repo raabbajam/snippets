@@ -5,8 +5,13 @@ Snippets is a demo of basic code sharing web apps.
 
 ## Installing to local
 
-```git clone https://github.com/raabbajam/snippets &&
+```bash
+git clone https://github.com/raabbajam/snippets &&
 cd snippets &&
 composer install &&
+bower install &&
 npm install &&
-gulp```
+gulp &&
+chmod -R 777 app/storage
+```
+
