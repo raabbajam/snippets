@@ -14,4 +14,9 @@ npm install &&
 gulp &&
 chmod -R 777 app/storage
 ```
+Create some local database (default to snippets) and change app/config/local/database.php with your credentials
+```bash
+php artisan migrate --seed
+```
+
 

@@ -238,6 +238,7 @@ gulp.task('fonts:pub', function() {
       paths.bower.gn + '/fonts/**/*.{ttf,woff,eof,svg}',
       paths.bower.nf + '/fonts/**/*.{ttf,woff,eof,svg}',
       paths.bower.pl + '/fonts/**/*.{ttf,woff,eof,svg}',
+      paths.bower.fontAwesome + '/fonts/**/*.{ttf,woff,eof,svg}',
     ])
     .pipe(gulp.dest(paths.public.assets + '/fonts'));
 });
@@ -252,4 +253,4 @@ gulp.task('build:dev', []);
 gulp.task('build:prod', []);
 
 // gulp clean:pre && gulp TASK && gulp clean:post
-gulp.task('default', ['js:pub', 'js:lib', 'css:pub', 'fonts:pub', 'js:watch', 'less:watch', 'fonts:pub']);
+gulp.task('default', ['js:pub', 'js:lib', 'css:pub', 'fonts:pub', 'js:watch', 'less:watch', 'fonts:pub', 'cm:pub']);
