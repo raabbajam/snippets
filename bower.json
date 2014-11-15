@@ -2,7 +2,8 @@
   "name": "master",
   "version": "0.0.0",
   "authors": [
-    "Muhammad Abdul Jabbaar <muhammadabduljabbaar@gmail.com>"
+    "Muhammad Abdul Jabbaar <muhammadabduljabbaar@gmail.com>",
+    "Raabb Ajam <raabbajam@gmail.com>"
   ],
   "license": "MIT",
   "ignore": [
@@ -19,9 +20,11 @@
     "respond": "~1.4.2",
     "font-awesome": "~4.1.0",
     "jquery-cookie": "~1.4.1",
-    "tabIndent.js": "https://github.com:julianlam/tabIndent.js",
     "codemirror": "~4.5.0",
-    "PagePreloadingEffect": "https://github.com/codrops/PagePreloadingEffect",
-    "jquery-timeago": "https://github.com/rmm5t/jquery-timeago.git#~1.4.1"
+    "tabIndent.js": "https://github.com/julianlam/tabIndent.js.git",
+    "jquery-timeago": "https://github.com/rmm5t/jquery-timeago.git#~1.4.1",
+    "GoogleNexusWebsiteMenu": "https://github.com/codrops/GoogleNexusWebsiteMenu.git",
+    "NaturalLanguageForm": "https://github.com/codrops/NaturalLanguageForm.git",
+    "PagePreloadingEffect": "https://github.com/codrops/PagePreloadingEffect.git"
   }
 }
