@@ -18,8 +18,8 @@
 									{{Form::select('theme', $themes, $snippet->theme, ['id' => 'theme'])}}
 								</li>
 								<li><a class="gn-icon fa-icon fa-plus-square" href="{{url('/')}}">New Snippet</a></li>
-								<li><a class="gn-icon fa-icon fa-github" href="https://github.com/raabbajam/snippets">Fork</a></li>
-								<li><a class="gn-icon fa-icon fa-external-link-square">Pondok Programmer</a></li>
+								<li><a class="gn-icon fa-icon fa-github" target="_blank" href="https://github.com/raabbajam/snippets" title="Fork This Project">Fork This Project</a></li>
+								<li><a class="gn-icon fa-icon fa-external-link-square" target="_blank" href="http://www.pondokprogrammer.com" title="Visit Pondok Programmer">Pondok Programmer</a></li>
 								<div class="nl-overlay"></div>
 							</form>
 						</ul>
