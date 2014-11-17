@@ -7,8 +7,6 @@
     "laravel/framework": "4.2.*"
   },
   "require-dev": {
-    "way/generators": "2.*",
-    "davejamesmiller/laravel-aliases": "dev-master",
     "fzaninotto/faker": "v1.3.0",
     "heroku/heroku-buildpack-php": "*"
   },
@@ -23,6 +21,9 @@
     ]
   },
   "scripts": {
+    "post-install-cmd": [
+      "$_ artisan optimize"
+    ],
     "pre-update-cmd": [
       "$_ artisan clear-compiled"
     ],
