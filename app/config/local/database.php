@@ -1,5 +1,5 @@
 <?php
-$dbopts = parse_url(getenv('DATABASE_URL'));
+
 return array(
 
   /*
@@ -22,14 +22,10 @@ return array(
 
     'mysql' => array(
       'driver'    => 'mysql',
-      // 'host'      => 'localhost',
-      // 'database'  => 'snippets',
+      'host'      => 'localhost',
+      'database'  => 'snippets',
       'username'  => 'root',
       'password'  => '',
-      'host'      => $dbopts["host"],
-      'database'  => $dbopts["path"],
-      'username'  => $dbopts["user"],
-      'password'  => $dbopts["pass"],
       'charset'   => 'utf8',
       'collation' => 'utf8_unicode_ci',
       'prefix'    => '',
