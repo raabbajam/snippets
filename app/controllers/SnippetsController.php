@@ -96,6 +96,7 @@ class SnippetsController extends \BaseController {
 				'message' => $validator->messages()->toArray()
 				], 200)->setCallback(Input::get('callback'));
 		}
+		dd($data);
 
 		$snippet->update($data);
 		return Response::json([
