@@ -19,4 +19,10 @@ Create some local database (default to snippets) and change app/config/local/dat
 php artisan migrate --seed
 ```
 
+## Installing to production
+```bash
+git pull --all
+git co production
+```
 
+### Semoga Bermanfaat
