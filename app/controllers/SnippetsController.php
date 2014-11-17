@@ -85,6 +85,10 @@ class SnippetsController extends \BaseController {
 		if(!$snippet) {
 			$snippet = new Snippet;
 			$snippet->path = $path;
+			$snippet->body = '';
+			$snippet->syntax = 'javascript';
+			$snippet->theme = 'monokai';
+			$snippet->path = $path;
 			$snippet->save();
 		}
 		$validator = Validator::make($data = Input::all(), Snippet::$rules);
