@@ -3,6 +3,9 @@
 
 Snippets is a demo of basic code sharing web apps.
 
+## Demo
+[https://github.com/raabbajam/snippets](https://github.com/raabbajam/snippets)
+
 ## Installing to local
 
 ```bash
