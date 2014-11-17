@@ -121,8 +121,8 @@ return array(
     'Illuminate\Validation\ValidationServiceProvider',
     'Illuminate\View\ViewServiceProvider',
     'Illuminate\Workbench\WorkbenchServiceProvider',
-    'DaveJamesMiller\Aliases\AliasesServiceProvider',
-    'Way\Generators\GeneratorsServiceProvider'
+    // 'DaveJamesMiller\Aliases\AliasesServiceProvider',
+    // 'Way\Generators\GeneratorsServiceProvider'
 
   ),
 
