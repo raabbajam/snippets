@@ -1,13 +1,10 @@
 <?php
 
-// Composer: "fzaninotto/faker": "v1.3.0"
-use Faker\Factory as Faker;
 
 class ThemesTableSeeder extends Seeder {
 
 	public function run()
 	{
-		$faker = Faker::create();
 		$time = date("Y-m-d H:i:s",time());
 
 		foreach(range(1, 10) as $index)
