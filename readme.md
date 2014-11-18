@@ -4,7 +4,7 @@
 Snippets is a demo of basic code sharing web apps.
 
 ## Demo
-[https://github.com/raabbajam/snippets](https://github.com/raabbajam/snippets)
+[http://raabbajam-snippets.herokuapp.com/xOE6E](http://raabbajam-snippets.herokuapp.com/xOE6E)
 
 ## Installing to local
 
